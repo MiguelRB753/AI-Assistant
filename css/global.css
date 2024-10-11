@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    color: #FCFCF7;
+}
+
+#app{
+    background: #2e2e2e;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app #assistant{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#app #assistant #info{
+    text-align: center;
+}
+
+#app #assistant #assistant-container{
+    padding: 100px;
+    background: #FCFCF7;
+    border-radius: 12px;
+    animation-name: shake;
+    animation-duration: 13s;
+    animation-iteration-count: infinite
+}
+
+#app #assistant #assistant-container img{
+    transform: scale(1.5,1.5);
+}
+
+#app #assistant h1{ 
+    font-size: 35px; 
+    animation-name: rainbow;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+#app #assistant #speech-div h2{
+    animation-name: rainbow;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+#app #assistant h4{ 
+    font-size: 20px; 
+}
+
+#app #assistant button{
+    width: 20vw;
+    padding: 5px;
+    background: #fff;
+    border: 2px solid #000000;
+    border-radius: 50px;
+}
+
+#app #assistant #speech-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+#app #assistant button ion-icon{
+    color: #000000;
+}
+
+@keyframes rainbow{
+    0%{
+        color: #ff0000;
+    }
+    13%{
+        color: #ffda00;
+    }
+    24%{
+        color: #00ff08;
+    }
+    34%{
+        color: #00ffda;
+    }
+    46%{
+        color: #0012ff;
+    }
+    57%{
+        color: #5100ff;
+    }
+    68%{
+        color: #d600ff;
+    }
+    79%{
+        color: #ff0092;
+    }
+    100%{
+        color: #ff0000;
+    }
+}
+@keyframes shake{
+    0%{
+        transform: translateY(0);
+        box-shadow: 0 0 20px hsla(100, 100%, 100%, .25);
+    }
+    25%{
+        transform: translateY(-50px);
+        box-shadow: 0 0 20px hsla(100, 100%, 100%, .5);
+    }
+    50%{
+        transform: translateY(0);
+        box-shadow: 0 0 20px hsla(100, 100%, 100%, .25);
+    }
+    75%{
+        transform: translateY(-50px);
+        box-shadow: 0 0 20px hsla(100, 100%, 100%, .5);
+    }
+    100%{
+        transform: translateY(0);
+        box-shadow: 0 0 20px hsla(100, 100%, 100%, .25);
+    }
+}

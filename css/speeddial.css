@@ -8,10 +8,21 @@
     gap: 20px;
 }
 
-#app #speeddial div h1{ font-size: 35px; text-align: center; }
-#app #speeddial div h4{ font-size: 20px; text-align: center; }
+#app #container{
+    padding: 40px;
+    box-shadow: 0 0 20px hsla(0,0%,0%,.25);
+    border-radius: 12px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
-#app #speeddial .apps{
+#app #speeddial #containerdiv h1{ font-size: 35px; text-align: center; }
+#app #speeddial #container div h4{ font-size: 20px; text-align: center; }
+
+#app #speeddial #container .apps{
     width: 25vw;
     height: 6vh;
     background: #fff;
@@ -26,11 +37,11 @@
     transition: .2s;
 }
 
-#app #speeddial #yt:hover{ background: #FF0033; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+#app #speeddial #container #yt:hover{ background: #FF0033; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
 
-#app #speeddial #ig:hover{ background-image: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045); cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+#app #speeddial #container #ig:hover{ background-image: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045); cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
 
-#app #speeddial #ggl:hover{ background: #DD5447; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+#app #speeddial #container #ggl:hover{ background: #DD5447; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
 
 ion-icon{ color: #000000 }
 
@@ -38,7 +49,5 @@ ion-icon{ color: #000000 }
     ggl: #DD5447
     yt: #FF0033
     ig: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045)
-
-
 
 */

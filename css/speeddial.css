@@ -23,7 +23,7 @@
 #app #speeddial #container div h4{ font-size: 20px; text-align: center; }
 
 #app #speeddial #container .apps{
-    width: 25vw;
+    width: 29vw;
     height: 6vh;
     background: #fff;
     border-radius: 12px;
@@ -37,17 +37,59 @@
     transition: .2s;
 }
 
-#app #speeddial #container #yt:hover{ background: #FF0033; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+#app #speeddial #container #yt:hover{ background: #FF0033; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
 
-#app #speeddial #container #ig:hover{ background-image: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045); cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+#app #speeddial #container #ig:hover{ background-image: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045); cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease; }
 
-#app #speeddial #container #ggl:hover{ background: #DD5447; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+#app #speeddial #container #ggl:hover{ background: #DD5447; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
+
+#app #speeddial #container #ttk:hover{ background: #FF0050; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
+
+#app #speeddial #container #computer-programs div #whatsapp:hover{ background: #25D366; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
+
+#app #speeddial #container #computer-programs div #calculator:hover{ background: #00a1f1; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
+
+#app #speeddial #container #computer-programs div #github:hover{ background: #2b3137; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
+
+#app #speeddial #container #computer-programs div #linkedin:hover{ background: #0052B1; cursor: pointer; transform: scale(1.05,1.05); transition: .2s ease;}
 
 ion-icon{ color: #000000 }
+
+#app #speeddial #container #computer-programs{
+    width: 29vw;
+    display: flex;
+    gap: 10px;
+}
+
+#app #speeddial #container #computer-programs div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#app #speeddial #container #computer-programs #calculator, 
+#app #speeddial #container #computer-programs #whatsapp,
+#app #speeddial #container #computer-programs #github,
+#app #speeddial #container #computer-programs #linkedin{
+    width: 14.2vw;
+    height: 6vh;
+    background: #fff;
+    border-radius: 12px;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: .2s;
+}
 
 /* 
     ggl: #DD5447
     yt: #FF0033
     ig: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045)
-
+    ttk:  #ff0050
+    lkn: #0052B1
 */

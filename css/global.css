@@ -13,6 +13,8 @@
     background: #2e2e2e;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 #app #assistant{
@@ -65,6 +67,12 @@
     background: #fff;
     border: 2px solid #000000;
     border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+#app #assistant button:hover{
+    transform: scale(1.05,1.05);
+    transition: .2s;
 }
 
 #app #assistant #speech-div{

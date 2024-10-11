@@ -1,0 +1,44 @@
+#app #speeddial{
+    width: 50vw;
+    height: 100vh;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#app #speeddial div h1{ font-size: 35px; text-align: center; }
+#app #speeddial div h4{ font-size: 20px; text-align: center; }
+
+#app #speeddial .apps{
+    width: 25vw;
+    height: 6vh;
+    background: #fff;
+    border-radius: 12px;
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#app #speeddial #yt:hover{ background: #FF0033; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+
+#app #speeddial #ig:hover{ background-image: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045); cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+
+#app #speeddial #ggl:hover{ background: #DD5447; cursor: pointer; transform: scale(1.05,1.05); transition: .2s;}
+
+ion-icon{ color: #000000 }
+
+/* 
+    ggl: #DD5447
+    yt: #FF0033
+    ig: linear-gradient(to right, #833AB4, #FD1D1D, #FCB045)
+
+
+
+*/

@@ -54,7 +54,6 @@
     animation-name: rainbow;
     animation-duration: 13s;
     animation-iteration-count: infinite;
-    display: none;
 }
 
 #app #assistant h4{ 
